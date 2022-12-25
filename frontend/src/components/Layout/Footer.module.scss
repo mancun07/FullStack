@@ -1,0 +1,21 @@
+.footer {
+    background: #333 linear-gradient(180deg,#000,transparent);
+    padding: 10px 0;
+    text-align: center;
+    height: 75px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    li {
+        padding: 0 10px;
+    }
+}

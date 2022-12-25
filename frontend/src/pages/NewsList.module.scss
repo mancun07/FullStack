@@ -1,0 +1,29 @@
+.news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem;
+    background: #1b1b2a;
+    padding: 20px;
+    color: #fff;
+    margin-top: 130px;
+    margin-bottom: 100px;
+    opacity: 0.9;
+}
+
+@media (max-width: 887px) {
+    .news {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 587px) {
+    .news {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+// .pageLink {
+//     cursor: pointer;
+//     padding-right: 10px;
+// }

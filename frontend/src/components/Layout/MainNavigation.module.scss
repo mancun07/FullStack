@@ -1,0 +1,185 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:2;
+}
+
+.logo {
+    font-size: 1.85rem;
+    animation: wiggle 0.3s 1s 8 alternate forwards;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(3deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        cursor: pointer;
+    }
+}
+
+.menu1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+        padding:0 20px;
+        transition: all 0.3s;
+
+        &:hover {
+          color: steelblue;
+        }
+    }
+    
+}
+
+.menu2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left:50px;
+
+    li {
+        padding: 0 10px;
+
+        &:hover {
+          color: steelblue;
+        }
+    }
+
+}
+
+// Mobile menu
+
+.sidenav-trigger {
+    display: none;
+    content: "";
+    background: #fff;
+    height: 3px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+  
+    &::before {
+      content: "";
+      background: #fff;
+      height: 3px;
+      width: 30px;
+      position: absolute;
+      top: 10px;
+      cursor: pointer;
+    }
+  
+    &::after {
+      content: "";
+      background: #fff;
+      height: 3px;
+      width: 30px;
+      position: absolute;
+      bottom: 10px;
+      cursor: pointer;
+    }
+  }
+
+
+  .sidenav {
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 300;
+    display: none;
+    width: 300px;
+    height: 100vh;
+    line-height: 1.5;
+    background: #333;
+    font-size: 20px;
+    padding: 40px 30px 40px 30px;
+
+
+    .close {
+      position: absolute;
+      top:15px;
+      left:15px;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+  }
+
+  .sidenav-is-active {
+    display: block;
+    animation: slidemenu 0.2s ease-in-out;
+  }
+
+  @keyframes slidemenu {
+    from {
+      transform: translate(-100vw);
+    }
+    to {
+      transform: translate(0);
+    }
+  }
+
+
+  .sidenav__nav__menu a {
+    display: block;
+    color: #fff;
+    border-bottom: 1px #fff solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: rgba(255, 0, 0, 0.5);
+    }
+  }
+
+  .sidenav__nav__socials li {
+    display: inline-block;
+  }
+
+  .sidenav__nav__socials a {
+    color: #fff;
+    padding-right: 15px;
+    font-size: 1.25rem;
+  }
+
+  .sidenav__nav__socials a {
+    &:hover {
+      color: rgba(255, 0, 0, 0.5);
+    }
+  }
+
+
+  
+  @media (max-width: 930px) {
+    .sidenav-trigger {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+  }

@@ -1,0 +1,97 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+    /* font-display: fallback; */
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mainImage {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../public/main.jpg');
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media (max-width: 587px) {
+  .mainImage {
+    background: #000;
+  }
+}
+
+
+#root { height: 100% }
+html {
+  position: relative;
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+
+body {
+  background: #1b1b2a;
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+.error {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+
+}
+
+
